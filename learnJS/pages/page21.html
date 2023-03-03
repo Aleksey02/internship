@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1)let calculator = {<br>
+        read() {<br>
+          this.a = +prompt('vvedi a', 0);<br>
+          this.b = +prompt('vvedi b', 0);<br>
+        }<br>
+        mul() {<br>
+          return this.a * this.b;<br>
+        },<br>
+        sum() {<br>
+          return this.a + this.b;<br>
+        },<br>
+      
+      
+      };<br>
+      2)function Calculator() {<br>
+        this.read = function() {<br>
+          this.a = +prompt('a?', 0);<br>
+          this.b = +prompt('b?', 0);<br>
+        };<br> 
+        this.sum = function() {<br>
+          return this.a + this.b;<br>
+        };<br>
+        this.mul = function() {<br>
+          return this.a * this.b;<br>
+        };<br>
+      }<br>
+      3)function Accumulator(val) {//Создайте new Accumulator<br>
+        this.value = val;<br>
+      
+        this.read = function() {<br>
+          this.value += +prompt('Добавить?', 0);<br>
+        };<br>
+      
+      }<br>
+      
+</body>
+</html>

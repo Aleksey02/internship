@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1)if (age >= 14 && age <= 90)<br>
+    2)if (age < 14 || age > 90)<br>
+    3)let userName = prompt("Кто там?", '');<br>
+
+    if (userName === 'Админ') {<br>
+    
+      let pass = prompt('Пароль?', '');<br>
+    
+      if (pass === 'Я главный') {<br>
+        alert( 'Здравствуйте!' );<br>
+      } else if (pass === '' || pass === null) {<br>
+        alert( 'Отменено' );<br>
+      } else {<br>
+        alert( 'Неверный пароль' );<br>
+      }<br>
+    
+    } else if (userName === '' || userName === null) {<br>
+      alert( 'Отменено' );<br>
+    } else {<br>
+      alert( "Я вас не знаю" );<br>
+    }
+</body>
+</html>

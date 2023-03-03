@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1)function camelize(str) {<br>
+        return str<br>
+          .split('-') <br>
+          .map((word, i) => i == 0 ? word : word[0].toUpperCase() + word.slice(1))<br>
+          .join(''); <br>
+      }<br>
+      2)function filterRange(array, a, b) {<br>
+        return array.filter(item => (a <= item && item <= b));<br>
+      }<br>
+      3)function filterRangeInPlace(arr, a, b) {<br>
+        let val;<br>
+        for (let i = 0; i < arr.length; i++) {<br>
+          val = arr[i];<br>
+          if (val < a || val > b) {<br>
+            arr.splice(i, 1);<br>
+            i--;<br>
+          }<br>
+        }<br>
+      }<br>
+      4)function copySorted(arr) {<br>
+        return arr.slice().sort();<br>
+      }<br>
+      5)let vasya = { name: "Вася", age: 25 };<br>
+      let petya = { name: "Петя", age: 30 };<br>
+      let masha = { name: "Маша", age: 28 };<br>
+      
+      let users = [ vasya, petya, masha ];<br>
+      
+      let names = users.map(item => item.name);<br>
+      6)let usersMapped = users.map(user => ({<br>
+        fullName: `${user.name} ${user.surname}`,<br>
+        id: user.id<br>
+      }));<br>
+      7)function sortByAge(arr) {<br>
+        arr.sort((a, b) => a.age > b.age ? 1 : -1);<br>
+      }<br>
+      8)function shuffle(array) {<br>
+        array.sort(() => Math.random() - 0.5);<br>
+      }<br>
+      9)function getAverageAge(users) {<br>
+        return users.reduce((prev, user) => prev + user.age, 0) / users.length;<br>
+      }<br>
+      10)function unique(arr) {<br>
+        let result = [];<br>
+      
+        for (let str of arr) {<br>
+          if (!result.includes(str)) {<br>
+            result.push(str);<br>
+          }<br>
+        }<br>
+      
+        return result;<br>
+      }<br>
+      
+</body>
+</html>

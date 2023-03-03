@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1)function checkAge(age) {<br>
+        return (age > 18) ? true : confirm('Родители разрешили?');<br>
+      }<br>
+      2)function min(a, b) {<br>
+        if (a < b) {<br>
+          return a;<br>
+        } else {<br>
+          return b;<br>
+        }<br>
+      }<br>
+      3)function pow(x, n) {<br>
+        let res = x;<br>
+      
+        for (let i = 1; i < n; i++) {<br>
+          res *= x;<br>
+        }
+      
+        return res;<br>
+      }<br>
+      
+      let x = prompt("vvedi x?", '');<br>
+      let n = prompt("vvedi n?", '');<br>
+      
+      if (n < 1) {<br>
+        alert(`Error`);<br>
+      } else {<br>
+        alert( pow(x, n) );<br>
+      }<br>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1)<br>
+    let user = {};<br>
+    user.name='John';<br>
+    user.surname='Smith';<br>
+    user.name='Pete';<br>
+    delete user.name;<br>
+    2)<br>
+    function isEmpty(obj) {<br>
+        for (let key in obj) {<br>
+          return false;<br>
+        }<br>
+        return true;<br>
+      }<br>
+      3)<br>
+      let salaries = { John: 100, Ann: 160, Pete: 130 };<br>
+        
+
+      let sum = 0;<br>
+      for (let key in salaries) {<br>
+        sum += salaries[key];<br>
+      }<br>
+      3)<br>
+      function multiplyNumeric(obj) {<br>
+        for (let key in obj) {<br>
+          if (typeof obj[key] == 'number') {<br>
+            obj[key] *= 2;<br>
+          }<br>
+        }<br>
+      }<br>
+</body>
+</html>
